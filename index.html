@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kshitij Singh — Visual Artist & Photographer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-counter" id="loaderCounter">0</div>
+  <div class="loader-film-strip">
+    <div class="loader-frame"><div class="loader-inner"></div></div>
+    <div class="loader-frame"><div class="loader-inner"></div></div>
+    <div class="loader-frame"><div class="loader-inner"></div></div>
+    <div class="loader-frame"><div class="loader-inner"></div></div>
+    <div class="loader-frame"><div class="loader-inner"></div></div>
+  </div>
+  <div class="loader-text">Loading Film Roll — Please Wait</div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">
+    KS
+    <span>Visual Artist</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#portfolio">Work</a></li>
+    <li><a href="#film-section">Film</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-music-toggle" id="musicToggle" type="button" aria-label="Toggle music">
+    <span class="music-icon"></span>
+  </button>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<section id="hero">
+  <div class="hero-bg"></div>
+
+  <div class="hero-film-frames">
+    <div class="floating-frame"><div class="frame-img"></div></div>
+    <div class="floating-frame"><div class="frame-img"></div></div>
+    <div class="floating-frame"><div class="frame-img"></div></div>
+    <div class="floating-frame"><div class="frame-img"></div></div>
+    <div class="floating-frame"><div class="frame-img"></div></div>
+    <div class="floating-frame"><div class="frame-img"></div></div>
+    <div class="floating-frame"><div class="frame-img"></div></div>
+    <div class="floating-frame"><div class="frame-img"></div></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span>Est. 2019</span>
+      <span>·</span>
+      <span>Madhya Pradesh, India</span>
+    </div>
+    <div class="hero-name">
+      Kshitij<br><span class="accent">Singh</span>
+    </div>
+    <div class="hero-tagline">Some moments only happen once. I make sure they last.</div>
+    <div class="hero-since">
+      <div class="hero-since-badge">Kodak Vision</div>
+      <div class="hero-since-text">KSHITIJ SINGH · MADHYA PRADESH · EST. 2019</div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <div class="scroll-line"></div>
+    <div class="scroll-text">Scroll</div>
+  </div>
+</section>
+
+<!-- FILM STRIP DIVIDER -->
+<div class="film-strip-divider">
+  <div class="film-strip-inner" id="filmStrip"></div>
+</div>
+
+<!-- ==================== ABOUT ==================== -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-text-side">
+      <div class="section-label reveal">About the Artist</div>
+      <h2 class="section-title reveal reveal-delay-1">WHO<br>AM I?</h2>
+      <p class="about-bio reveal reveal-delay-2">
+        I'm Kshitij. Been shooting since 2019, when a camera somehow became the most honest way I knew to say something.
+        <br><br>
+        Since then, I've had the chance to work with brands, shoot weddings, capture cars, style food, document podcasts, and make reels. If it's worth remembering, I want to be the one with the camera.
+        <br><br>
+        I also shoot on film. Some moments feel better with a little grain and no undo button.
+      </p>
+      <div class="specialties reveal reveal-delay-3">
+        <span class="specialty-tag">Weddings</span>
+        <span class="specialty-tag">Portraits</span>
+        <span class="specialty-tag">Products</span>
+        <span class="specialty-tag">Automotive</span>
+        <span class="specialty-tag">Food & Flatlays</span>
+        <span class="specialty-tag">Corporate</span>
+        <span class="specialty-tag">Podcasts</span>
+        <span class="specialty-tag">Reels</span>
+        <span class="specialty-tag">Film Photography</span>
+        <span class="specialty-tag">Catalogues</span>
+      </div>
+      <div class="about-stats reveal">
+        <div class="stat-item">
+          <div class="stat-number">5+</div>
+          <div class="stat-label">Years Active</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Brands Shot</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">∞</div>
+          <div class="stat-label">Film Frames</div>
+        </div>
+      </div>
+    </div>
+    <div class="about-visual-side reveal">
+      <div class="about-film-card">
+        <div class="film-35mm">
+          <div class="film-35mm-holes-top">
+            <div class="film-hole-small"></div>
+            <div class="film-hole-small"></div>
+            <div class="film-hole-small"></div>
+            <div class="film-hole-small"></div>
+            <div class="film-hole-small"></div>
+            <div class="film-hole-small"></div>
+            <div class="film-hole-small"></div>
+            <div class="film-hole-small"></div>
+          </div>
+          <div class="film-image-area">
+            <img src="images/about-photo.PNG" alt="Kshitij Singh" class="about-image">
+          </div>
+          <div class="film-data-strip">
+            <span>KODAK PORTRA 400</span>
+            <span>35mm</span>
+            <span>EXP. 2024</span>
+          </div>
+        </div>
+        <div class="about-film-label">Since 2019</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== PORTFOLIO ==================== -->
+<section id="portfolio">
+  <div class="portfolio-header">
+    <div>
+      <div class="section-label reveal">Selected Work</div>
+      <h2 class="section-title reveal">THE<br>PORTFOLIO</h2>
+    </div>
+    <div class="portfolio-nav-tabs">
+      <button class="tab-btn active" data-cat="portraits">Portraits</button>
+      <button class="tab-btn" data-cat="auto">Automotive</button>
+      <button class="tab-btn" data-cat="food">Food & Products</button>
+      <button class="tab-btn" data-cat="film">Film Photography</button>
+      <button class="tab-btn" data-cat="street">Street</button>
+    </div>
+  </div>
+  <div class="portfolio-grid">
+
+    <!-- PRODUCT -->
+    <div class="category-section" id="cat-product">
+      <div class="photo-grid-3">
+        <div class="photo-card" onclick="openLightbox(10)">
+          
+        </div>
+        <div class="photo-card landscape" onclick="openLightbox(11)">
+          
+        </div>
+        <div class="photo-card landscape" onclick="openLightbox(12)">
+          
+        </div>
+        <div class="photo-card" onclick="openLightbox(13)">
+          
+        </div>
+        <div class="photo-card" onclick="openLightbox(14)">
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- FLATLAYS & FOOD -->
+    <div class="category-section" id="cat-flatlays">
+      <div class="photo-grid-3">
+        <div class="photo-card" onclick="openLightbox(0)">
+          
+        </div>
+        <div class="photo-card" onclick="openLightbox(1)">
+          
+        </div>
+        <div class="photo-card" onclick="openLightbox(2)">
+          
+        </div>
+        <div class="photo-card" onclick="openLightbox(3)">
+          
+        </div>
+        <div class="photo-card landscape" onclick="openLightbox(4)">
+          
+        </div>
+        <div class="photo-card" onclick="openLightbox(5)">
+          
+        </div>
+        <div class="photo-card" onclick="openLightbox(6)">
+          
+        </div>
+        <div class="photo-card" onclick="openLightbox(7)">
+          
+        </div>
+        <div class="photo-card" onclick="openLightbox(8)">
+          
+        </div>
+        <div class="photo-card" onclick="openLightbox(9)">
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- AUTOMOTIVE -->
+    <div class="category-section" id="cat-auto">
+      <div class="photo-grid-3">
+        <div class="photo-card" onclick="openLightbox(18)" data-caption="Bike 1"><img src="images/bike-1.JPG" alt="Bike 1"></div>
+        <div class="photo-card" onclick="openLightbox(19)" data-caption="Bike 2"><img src="images/bike-2.JPG" alt="Bike 2"></div>
+        <div class="photo-card" onclick="openLightbox(20)" data-caption="Bike 3"><img src="images/bike-3.JPG" alt="Bike 3"></div>
+        <div class="photo-card" onclick="openLightbox(21)" data-caption="Bike 5"><img src="images/bike-5.JPG" alt="Bike 5"></div>
+        <div class="photo-card" onclick="openLightbox(22)" data-caption="Bike 6"><img src="images/bike-6.JPG" alt="Bike 6"></div>
+        <div class="photo-card" onclick="openLightbox(23)" data-caption="Bike 7"><img src="images/bike-7.JPG" alt="Bike 7"></div>
+        <div class="photo-card" onclick="openLightbox(24)" data-caption="Bike 4"><img src="images/bike-4.JPG" alt="Bike 4"></div>
+        <div class="photo-card" onclick="openLightbox(25)" data-caption="Bike 8"><img src="images/bike-8.JPG" alt="Bike 8"></div>
+        <div class="photo-card" onclick="openLightbox(26)" data-caption="Bike 9"><img src="images/bike-9.JPG" alt="Bike 9"></div>
+        <div class="photo-card" onclick="openLightbox(27)" data-caption="Bike 10"><img src="images/bike-10.JPG" alt="Bike 10"></div>
+        <div class="photo-card" onclick="openLightbox(28)" data-caption="Bike 11"><img src="images/bike-11.JPG" alt="Bike 11"></div>
+        <div class="photo-card" onclick="openLightbox(29)" data-caption="Bike 12"><img src="images/bike-12.JPG" alt="Bike 12"></div>
+        <div class="photo-card" onclick="openLightbox(30)" data-caption="Bike 13"><img src="images/bike-13.JPG" alt="Bike 13"></div>
+        <div class="photo-card" onclick="openLightbox(31)" data-caption="Bike 14"><img src="images/bike-14.JPG" alt="Bike 14"></div>
+        <div class="photo-card" onclick="openLightbox(32)" data-caption="Bike 18"><img src="images/bike-18.JPG" alt="Bike 18"></div>
+        <div class="photo-card" onclick="openLightbox(33)" data-caption="Bike 14"><img src="images/bike-14.JPG" alt="Bike 14"></div>
+        <div class="photo-card" onclick="openLightbox(34)" data-caption="Bike 15"><img src="images/bike-15.JPG" alt="Bike 15"></div>
+        <div class="photo-card" onclick="openLightbox(35)" data-caption="Bike 16"><img src="images/bike-16.JPG" alt="Bike 16"></div>
+        <div class="photo-card" onclick="openLightbox(36)" data-caption="Bike 17"><img src="images/bike-17.JPG" alt="Bike 17"></div>
+        <div class="photo-card" onclick="openLightbox(37)" data-caption="Bike 19"><img src="images/bike-19.JPG" alt="Bike 19"></div>
+        <div class="photo-card" onclick="openLightbox(38)" data-caption="Bike 20"><img src="images/bike-20.JPG" alt="Bike 20"></div>
+        <div class="photo-card" onclick="openLightbox(39)" data-caption="Bike 21"><img src="images/bike-21.JPG" alt="Bike 21"></div>
+        <div class="photo-card" onclick="openLightbox(40)" data-caption="Bike 22"><img src="images/bike-22.JPG" alt="Bike 22"></div>
+        <div class="photo-card" onclick="openLightbox(41)" data-caption="Bike 23"><img src="images/bike-23.JPG" alt="Bike 23"></div>
+        <div class="photo-card" onclick="openLightbox(42)" data-caption="Bike 27"><img src="images/bike-27.JPG" alt="Bike 27"></div>
+        <div class="photo-card" onclick="openLightbox(43)" data-caption="Bike 24"><img src="images/bike-24.JPG" alt="Bike 24"></div>
+        <div class="photo-card" onclick="openLightbox(44)" data-caption="Bike 25"><img src="images/bike-25.JPG" alt="Bike 25"></div>
+        <div class="photo-card" onclick="openLightbox(45)" data-caption="Bike 26"><img src="images/bike-26.JPG" alt="Bike 26"></div>
+        <div class="photo-card" onclick="openLightbox(46)" data-caption="Bike 28"><img src="images/bike-28.JPG" alt="Bike 28"></div>
+        <div class="photo-card" onclick="openLightbox(47)" data-caption="Bike 29"><img src="images/bike-29.JPG" alt="Bike 29"></div>
+        <div class="photo-card" onclick="openLightbox(48)" data-caption="Bike 30"><img src="images/bike-30.JPG" alt="Bike 30"></div>
+        <div class="photo-card" onclick="openLightbox(49)" data-caption="Bike 37"><img src="images/bike-37.JPG" alt="Bike 37"></div>
+        <div class="photo-card" onclick="openLightbox(50)" data-caption="Bike 31"><img src="images/bike-31.JPG" alt="Bike 31"></div>
+        <div class="photo-card" onclick="openLightbox(51)" data-caption="Bike 35"><img src="images/bike-35.JPG" alt="Bike 35"></div>
+        <div class="photo-card" onclick="openLightbox(52)" data-caption="Bike 32"><img src="images/bike-32.JPG" alt="Bike 32"></div>
+        <div class="photo-card" onclick="openLightbox(53)" data-caption="Bike 38"><img src="images/bike-38.JPG" alt="Bike 38"></div>
+        <div class="photo-card" onclick="openLightbox(54)" data-caption="Bike 39"><img src="images/bike-39.JPG" alt="Bike 39"></div>
+        <div class="photo-card" onclick="openLightbox(55)" data-caption="Bike 40"><img src="images/bike-40.JPG" alt="Bike 40"></div>
+      </div>
+    </div>
+
+    <!-- FILM PHOTOGRAPHY -->
+    <div class="category-section" id="cat-film">
+      <div class="photo-grid-3">
+        <div class="photo-card" onclick="openLightbox(56)" data-caption="Film 01"><img src="images/film-01.JPG" alt="Film 01"></div>
+        <div class="photo-card" onclick="openLightbox(57)" data-caption="Film 03"><img src="images/film-03.JPG" alt="Film 03"></div>
+        <div class="photo-card" onclick="openLightbox(58)" data-caption="Film 3"><img src="images/film-3.JPG" alt="Film 3"></div>
+        <div class="photo-card" onclick="openLightbox(59)" data-caption="Film 4"><img src="images/film-4.JPG" alt="Film 4"></div>
+        <div class="photo-card" onclick="openLightbox(60)" data-caption="Film 4of"><img src="images/film-4of.JPG" alt="Film 4of"></div>
+        <div class="photo-card" onclick="openLightbox(61)" data-caption="Film 66of"><img src="images/film-66of.JPG" alt="Film 66of"></div>
+        <div class="photo-card" onclick="openLightbox(62)" data-caption="Film 8"><img src="images/film-8.JPG" alt="Film 8"></div>
+        <div class="photo-card" onclick="openLightbox(63)" data-caption="Film 9"><img src="images/film-9.JPG" alt="Film 9"></div>
+        <div class="photo-card" onclick="openLightbox(64)" data-caption="Film 10"><img src="images/film-10.JPG" alt="Film 10"></div>
+        <div class="photo-card" onclick="openLightbox(65)" data-caption="Film 12"><img src="images/film-12.JPG" alt="Film 12"></div>
+        <div class="photo-card" onclick="openLightbox(66)" data-caption="Film 13"><img src="images/film-13.JPG" alt="Film 13"></div>
+        <div class="photo-card" onclick="openLightbox(67)" data-caption="Film 14"><img src="images/film-14.JPG" alt="Film 14"></div>
+        <div class="photo-card" onclick="openLightbox(68)" data-caption="Film 15"><img src="images/film-15.JPG" alt="Film 15"></div>
+        <div class="photo-card" onclick="openLightbox(69)" data-caption="Film 16"><img src="images/film-16.JPG" alt="Film 16"></div>
+        <div class="photo-card" onclick="openLightbox(70)" data-caption="Film 17"><img src="images/film-17.JPG" alt="Film 17"></div>
+        <div class="photo-card" onclick="openLightbox(71)" data-caption="Film 18"><img src="images/film-18.JPG" alt="Film 18"></div>
+        <div class="photo-card" onclick="openLightbox(72)" data-caption="Film 19"><img src="images/film-19.JPG" alt="Film 19"></div>
+        <div class="photo-card" onclick="openLightbox(73)" data-caption="Film 20"><img src="images/film-20.JPG" alt="Film 20"></div>
+        <div class="photo-card" onclick="openLightbox(74)" data-caption="Film 21"><img src="images/film-21.JPG" alt="Film 21"></div>
+        <div class="photo-card" onclick="openLightbox(75)" data-caption="Film 22"><img src="images/film-22.JPG" alt="Film 22"></div>
+        <div class="photo-card" onclick="openLightbox(76)" data-caption="Film 23"><img src="images/film-23.JPG" alt="Film 23"></div>
+        <div class="photo-card" onclick="openLightbox(77)" data-caption="Film 24"><img src="images/film-24.JPG" alt="Film 24"></div>
+        <div class="photo-card" onclick="openLightbox(78)" data-caption="Film 25"><img src="images/film-25.JPG" alt="Film 25"></div>
+      </div>
+    </div>
+
+    <!-- FOOD & PRODUCTS -->
+    <div class="category-section" id="cat-food">
+      <div class="photo-grid-3">
+        <div class="photo-card" onclick="openLightbox(79)" data-caption="Orange Juice"><img src="images/ORANGE JUICCE (1 of 2) (2).jpg" alt="Orange Juice"></div>
+        <div class="photo-card" onclick="openLightbox(80)" data-caption="Cold Brew"><img src="images/cold brew (2 of 4).jpg" alt="Cold Brew"></div>
+        <div class="photo-card" onclick="openLightbox(81)" data-caption="Cold Brew"><img src="images/cold brew (4 of 4).jpg" alt="Cold Brew"></div>
+        <div class="photo-card" onclick="openLightbox(89)" data-caption="Chicken Dish"><img src="images/mommys chicken-04646.JPG" alt="Chicken"></div>
+        <div class="photo-card" onclick="openLightbox(90)" data-caption="Chicken Dish"><img src="images/mommys chicken-04703.JPG" alt="Chicken"></div>
+        <div class="photo-card" onclick="openLightbox(91)" data-caption="Orange Juice"><img src="images/ORANGE JUICCE22 (1 of 1).jpg" alt="Orange Juice"></div>
+        <div class="photo-card" onclick="openLightbox(92)" data-caption="Food Shot"><img src="images/20200706_120830_IMG_2954.JPG" alt="Food"></div>
+        <div class="photo-card" onclick="openLightbox(82)" data-caption="Flatlay"><img src="images/flatlay 1.JPG" alt="Flatlay"></div>
+        <div class="photo-card" onclick="openLightbox(83)" data-caption="Flatlay"><img src="images/flatlay 2-9C71-4661-A2CF-03525E4768A5.JPG" alt="Flatlay"></div>
+        <div class="photo-card" onclick="openLightbox(84)" data-caption="Flatlay"><img src="images/flatlay 3.JPG" alt="Flatlay"></div>
+        <div class="photo-card" onclick="openLightbox(85)" data-caption="Flatlay"><img src="images/flatlay hh.jpg" alt="Flatlay"></div>
+        <div class="photo-card" onclick="openLightbox(86)" data-caption="Flatlay"><img src="images/flatlay idk.jpg" alt="Flatlay"></div>
+        <div class="photo-card" onclick="openLightbox(87)" data-caption="Flatlay"><img src="images/flatlay-4.JPG" alt="Flatlay"></div>
+        <div class="photo-card" onclick="openLightbox(88)" data-caption="Flatlay"><img src="images/flatlay-5.JPG" alt="Flatlay"></div>
+      </div>
+    </div>
+
+    <!-- PORTRAITS -->
+    <div class="category-section active" id="cat-portraits">
+      <div class="photo-grid-3">
+        <div class="photo-card" onclick="openLightbox(0)"><img src="images/atulya final-00373.JPG" /></div>
+        <div class="photo-card" onclick="openLightbox(1)"><img src="images/atulya final-00390.JPG" /></div>
+        <div class="photo-card" onclick="openLightbox(2)"><img src="images/atulya final-00397.JPG" /></div>
+        <div class="photo-card" onclick="openLightbox(3)"><img src="images/atulya final-00800.JPG" /></div>
+        <div class="photo-card" onclick="openLightbox(4)"><img src="images/atulya final-00997.JPG" /></div>
+        <div class="photo-card" onclick="openLightbox(5)"><img src="images/atulya final-01018.JPG" /></div>
+        <div class="photo-card" onclick="openLightbox(6)"><img src="images/atulya final-01442.JPG" /></div>
+        <div class="photo-card" onclick="openLightbox(7)"><img src="images/atulya final-01488.JPG" /></div>
+        <div class="photo-card" onclick="openLightbox(8)"><img src="images/atulya final-01511.JPG" /></div>
+        <div class="photo-card" onclick="openLightbox(9)"><img src="images/Copy of FInal! (12 of 27).JPG" /></div>
+        <div class="photo-card" onclick="openLightbox(10)"><img src="images/Copy of FInal! (23 of 27).JPG" /></div>
+        <div class="photo-card" onclick="openLightbox(11)"><img src="images/Copy of FInal! (25 of 27).JPG" /></div>
+        <div class="photo-card" onclick="openLightbox(12)"><img src="images/Copy of FInal! (26 of 27).JPG" /></div>
+        <div class="photo-card" onclick="openLightbox(13)"><img src="images/Copy of FInal! (4 of 27).JPG" /></div>
+        <div class="photo-card" onclick="openLightbox(14)"><img src="images/Copy of FInal! (8 of 27).JPG" /></div>
+        <div class="photo-card" onclick="openLightbox(15)"><img src="images/Copy of FInal! (9 of 27).JPG" /></div>
+        <div class="photo-card" onclick="openLightbox(16)"><img src="images/Copy of ggg1 (4 of 6).JPG" /></div>
+        <div class="photo-card" onclick="openLightbox(17)"><img src="images/Copy of ggg1 (6 of 6).JPG" /></div>
+      </div>
+    </div>
+
+    <!-- STREET PHOTOGRAPHY -->
+    <div class="category-section" id="cat-street">
+      <div class="photo-grid-3">
+        <div class="photo-card" onclick="openLightbox(93)" data-caption="Street 1"><img src="images/DSCF0031.jpg" alt="Street 1"></div>
+        <div class="photo-card" onclick="openLightbox(94)" data-caption="Street 2"><img src="images/IMG_2848.JPG.jpeg" alt="Street 2"></div>
+        <div class="photo-card" onclick="openLightbox(95)" data-caption="Street 3"><img src="images/IMG_2849.JPG.jpeg" alt="Street 3"></div>
+        <div class="photo-card" onclick="openLightbox(96)" data-caption="Street 4"><img src="images/IMG_2850.JPG.jpeg" alt="Street 4"></div>
+        <div class="photo-card" onclick="openLightbox(97)" data-caption="Street 5"><img src="images/IMG_2851.JPG.jpeg" alt="Street 5"></div>
+        <div class="photo-card" onclick="openLightbox(98)" data-caption="Street 6"><img src="images/IMG_2852.JPG.jpeg" alt="Street 6"></div>
+        <div class="photo-card" onclick="openLightbox(99)" data-caption="Street 7"><img src="images/IMG_2853.JPG.jpeg" alt="Street 7"></div>
+        <div class="photo-card" onclick="openLightbox(100)" data-caption="Street 8"><img src="images/IMG_2854.JPG.jpeg" alt="Street 8"></div>
+        <div class="photo-card" onclick="openLightbox(101)" data-caption="Street 9"><img src="images/IMG_2855.JPG.jpeg" alt="Street 9"></div>
+        <div class="photo-card" onclick="openLightbox(102)" data-caption="Street 10"><img src="images/IMG_2856.JPG.jpeg" alt="Street 10"></div>
+        <div class="photo-card" onclick="openLightbox(103)" data-caption="Street 11"><img src="images/IMG_2857.JPG.jpeg" alt="Street 11"></div>
+        <div class="photo-card" onclick="openLightbox(104)" data-caption="Street 12"><img src="images/IMG_2858.JPG.jpeg" alt="Street 12"></div>
+        <div class="photo-card" onclick="openLightbox(105)" data-caption="Street 13"><img src="images/IMG_2859.JPG.jpeg" alt="Street 13"></div>
+        <div class="photo-card" onclick="openLightbox(106)" data-caption="Street 14"><img src="images/IMG_2860.JPG.jpeg" alt="Street 14"></div>
+        <div class="photo-card" onclick="openLightbox(107)" data-caption="Street 15"><img src="images/IMG_2861.JPG.jpeg" alt="Street 15"></div>
+        <div class="photo-card" onclick="openLightbox(108)" data-caption="Street 16"><img src="images/IMG_2862.JPG.jpeg" alt="Street 16"></div>
+        <div class="photo-card" onclick="openLightbox(109)" data-caption="Street 17"><img src="images/IMG_2863.JPG.jpeg" alt="Street 17"></div>
+        <div class="photo-card" onclick="openLightbox(110)" data-caption="Street 18"><img src="images/IMG_2864.JPG.jpeg" alt="Street 18"></div>
+        <div class="photo-card" onclick="openLightbox(111)" data-caption="Street 19"><img src="images/IMG_2865.JPG.jpeg" alt="Street 19"></div>
+        <div class="photo-card" onclick="openLightbox(112)" data-caption="Street 20"><img src="images/IMG_2866.JPG.jpeg" alt="Street 20"></div>
+        <div class="photo-card" onclick="openLightbox(113)" data-caption="Street 21"><img src="images/IMG_2867.JPG.jpeg" alt="Street 21"></div>
+        <div class="photo-card" onclick="openLightbox(114)" data-caption="Street 22"><img src="images/IMG_2868.JPG.jpeg" alt="Street 22"></div>
+        <div class="photo-card" onclick="openLightbox(115)" data-caption="Street 23"><img src="images/IMG_2869.JPG.jpeg" alt="Street 23"></div>
+        <div class="photo-card" onclick="openLightbox(116)" data-caption="Street 24"><img src="images/IMG_2870.JPG.jpeg" alt="Street 24"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================== QUOTE ==================== -->
+<section id="quote-section">
+  <p class="quote-text reveal">
+    "I don't think of myself as someone who takes pictures. I think of myself as someone who pays attention. The camera just comes along."
+  </p>
+  <p class="quote-author reveal reveal-delay-1">— Kshitij Singh, Photographer</p>
+</section>
+
+<!-- ==================== FILM SECTION ==================== -->
+<section id="film-section">
+  <div class="film-toggle-container">
+    <div class="section-label reveal">Analog Love</div>
+    <h2 class="section-title reveal">ON<br>FILM</h2>
+    <p style="font-family: 'Special Elite', cursive; font-size: 1.1rem; line-height: 1.85; letter-spacing: 0.02em; color: var(--text-muted); margin: 24px 0 40px; max-width: 500px;" class="reveal">
+      There's something about film that slows you down. You think before you shoot, and somehow that changes everything. Shot on 35mm and 120 medium format.
+    </p>
+
+    <div class="film-toggle-header reveal">
+      <div class="toggle-label" id="digitalLabel">Digital</div>
+      <div class="toggle-switch film-mode" id="filmToggle"></div>
+      <div class="toggle-label active" id="filmLabel">Film</div>
+    </div>
+
+    <div class="film-grid" id="filmGrid">
+      <div class="film-roll-item format-35mm">
+        <div class="film-inner">
+          <div class="film-bg" style="background: linear-gradient(135deg, #0A0000, #180808, #060000); opacity: 0;"></div>
+          <img class="film-image" src="images/film-01.JPG" alt="Film 01" style="opacity: 1;">
+        </div>
+        <div class="film-metadata">
+          <span class="film-frame-number">35mm · Frame 12A</span>
+        </div>
+      </div>
+      <div class="film-roll-item format-120">
+        <div class="film-inner">
+          <div class="film-bg" style="background: linear-gradient(160deg, #000000, #080808, #040404); opacity: 0;"></div>
+          <img class="film-image" src="images/film-03.JPG" alt="Film 03" style="opacity: 1;">
+        </div>
+        <div class="film-metadata">
+          <span class="film-frame-number">120 · Frame 6</span>
+        </div>
+      </div>
+      <div class="film-roll-item format-35mm">
+        <div class="film-inner">
+          <div class="film-bg" style="background: linear-gradient(135deg, #0A0000, #1A0808, #050000); opacity: 0;"></div>
+          <img class="film-image" src="images/film-3.JPG" alt="Film 3" style="opacity: 1;">
+        </div>
+        <div class="film-metadata">
+          <span class="film-frame-number">35mm · Frame 24</span>
+        </div>
+      </div>
+      <div class="film-roll-item format-35mm">
+        <div class="film-inner">
+          <div class="film-bg" style="background: linear-gradient(160deg, #0A0000, #180808, #080000); opacity: 0;"></div>
+          <img class="film-image" src="images/film-4.JPG" alt="Film 4" style="opacity: 1;">
+        </div>
+        <div class="film-metadata">
+          <span class="film-frame-number">35mm · Frame 3B</span>
+        </div>
+      </div>
+      <div class="film-roll-item format-120">
+        <div class="film-inner">
+          <div class="film-bg" style="background: linear-gradient(135deg, #000000, #080808, #050005); opacity: 0;"></div>
+          <img class="film-image" src="images/film-8.JPG" alt="Film 8" style="opacity: 1;">
+        </div>
+        <div class="film-metadata">
+          <span class="film-frame-number">120 · Frame 2</span>
+        </div>
+      </div>
+      <div class="film-roll-item format-35mm">
+        <div class="film-inner">
+          <div class="film-bg" style="background: linear-gradient(160deg, #060606, #0E0E0E, #050000); opacity: 0;"></div>
+          <img class="film-image" src="images/film-9.JPG" alt="Film 9" style="opacity: 1;">
+        </div>
+        <div class="film-metadata">
+          <span class="film-frame-number">35mm · Frame 18</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="contact-left reveal">
+      <div class="contact-box">
+        <div class="contact-headline">
+          <h2 class="contact-title">Contact Me</h2>
+          <p class="contact-copy">Need a shoot, creative direction, or a fresh brand story? Reach out with details, and I’ll respond fast.</p>
+        </div>
+        <div class="contact-row">
+          <a href="mailto:kshitijxsingh@gmail.com?subject=Project%20Inquiry" class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-card-label">MAIL US</div>
+              <div class="contact-card-value">kshitijxsingh@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://wa.me/917909481161" target="_blank" rel="noreferrer" class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004c-1.625 0-3.231.626-4.408 1.755-1.176 1.128-1.824 2.646-1.824 4.242 0 1.052.252 2.073.731 3.011l.921 1.516-1.286 4.705 4.794-1.256 1.46.921c.9.608 1.965.929 3.058.929 1.624 0 3.231-.626 4.408-1.755 1.176-1.129 1.824-2.646 1.824-4.242 0-1.096-.237-2.14-.691-3.141-.956-2.159-3.02-3.736-5.314-3.736m4.273-2.209C15.025 1.495 12.082 0 8.897 0 4.057 0 .115 3.942.115 8.782c0 1.549.36 3.06 1.04 4.441L.115 23.139 5.31 20.923c1.33.719 2.832 1.098 4.587 1.098 4.839 0 8.781-3.942 8.781-8.782 0-2.348-.822-4.52-2.41-6.209Z"/></svg>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-card-label">WHATSAPP</div>
+              <div class="contact-card-value">+91 7909 481 161</div>
+            </div>
+          </a>
+          <a href="https://instagram.com/kshitij.jpg" target="_blank" rel="noreferrer" class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#E1306C" d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8.95 2.2a.75.75 0 0 1 .7.7v1.05a.75.75 0 0 1-1.5 0V6.4a.75.75 0 0 1 .8-.7Zm-4.2 1.2a5.04 5.04 0 1 1 0 10.08 5.04 5.04 0 0 1 0-10.08Zm0 1.5a3.54 3.54 0 1 0 0 7.08 3.54 3.54 0 0 0 0-7.08Z"/></svg>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-card-label">INSTAGRAM</div>
+              <div class="contact-card-value">@kshitij.jpg</div>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/@zitiz.z" target="_blank" rel="noreferrer" class="contact-card">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF0000" d="M21.8 7.2c-.2-.7-.7-1.4-1.4-1.6C18.4 5 12 5 12 5s-6.4 0-8.4.6A2.58 2.58 0 0 0 2.2 7.2 26.3 26.3 0 0 0 1.5 12a26.3 26.3 0 0 0 .7 4.8 2.58 2.58 0 0 0 1.4 1.4c2 .6 8.4.6 8.4.6s6.4 0 8.4-.6a2.58 2.58 0 0 0 1.4-1.4c.4-1.6.6-3.2.7-4.8a26.3 26.3 0 0 0-.7-4.8Zm-12.3 8.8V8.1l5.5 3.5-5.5 3.4Z"/></svg>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-card-label">YOUTUBE</div>
+              <div class="contact-card-value">zitiz.z</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="contact-right reveal">
+      <div class="contact-form-wrapper">
+        <div class="step-tracker reveal">
+          <span class="step-number active">01</span>
+          <span class="step-sep">—</span>
+          <span class="step-number">02</span>
+          <span class="step-sep">—</span>
+          <span class="step-number">03</span>
+        </div>
+
+        <div class="form-step active" data-step="1">
+          <div class="section-label">Your Details</div>
+          <h3 class="contact-form-title">Your Details</h3>
+          <div class="input-row">
+            <div class="form-group">
+              <label class="form-label" for="firstName">First Name</label>
+              <input id="firstName" type="text" class="form-input" placeholder="First Name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="lastName">Last Name</label>
+              <input id="lastName" type="text" class="form-input" placeholder="Last Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="emailAddress">Email</label>
+            <input id="emailAddress" type="email" class="form-input" placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phoneNumber">Phone</label>
+            <input id="phoneNumber" type="text" class="form-input" placeholder="xxxxxxxxxx.">
+          </div>
+          <button type="button" class="form-submit" id="step1Continue"><span>CONTINUE →</span></button>
+        </div>
+
+        <div class="form-step" data-step="2">
+          <div class="section-label">What Are We Shooting?</div>
+          <h3 class="contact-form-title">Select your project type.</h3>
+          <div class="project-grid">
+            <button type="button" class="project-tile" data-value="WEDDING">WEDDING</button>
+            <button type="button" class="project-tile" data-value="PORTRAIT">PORTRAIT</button>
+            <button type="button" class="project-tile" data-value="PRODUCT">PRODUCT</button>
+            <button type="button" class="project-tile" data-value="AUTOMOTIVE">AUTOMOTIVE</button>
+            <button type="button" class="project-tile" data-value="FOOD & FLATLAY">FOOD & FLATLAY</button>
+            <button type="button" class="project-tile" data-value="FILM PHOTOGRAPHY">FILM PHOTOGRAPHY</button>
+            <button type="button" class="project-tile" data-value="CORPORATE">CORPORATE</button>
+            <button type="button" class="project-tile" data-value="OTHER">OTHER</button>
+          </div>
+          <div class="form-actions">
+            <button type="button" class="form-secondary" id="step2Back">BACK</button>
+            <button type="button" class="form-submit" id="step2Continue"><span>CONTINUE →</span></button>
+          </div>
+        </div>
+
+        <div class="form-step" data-step="3">
+          <div class="section-label">Your Vision</div>
+          <h3 class="contact-form-title">Anything else we should know?</h3>
+          <div class="form-group">
+            <label class="form-label" for="projectMessage">Message</label>
+            <textarea id="projectMessage" class="form-textarea" placeholder="Describe the shoot, mood, or idea..." minlength="10"></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="button" class="form-secondary" id="step3Back">BACK</button>
+            <button type="button" class="form-submit" id="step3Submit"><span>SEND IT →</span></button>
+          </div>
+        </div>
+
+        <div class="form-success hidden">
+          <div class="success-icon">✓</div>
+          <h3>Message Sent.</h3>
+          <p>I'll get back to you soon. Check your inbox or WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== INSTAGRAM ==================== -->
+<section id="instagram">
+  <div class="instagram-header">
+    <div>
+      <div class="section-label">Follow Along</div>
+      <div class="instagram-handle"><a href="https://instagram.com/kshitij.jpg" target="_blank">@kshitij.jpg</a></div>
+    </div>
+    <a href="https://instagram.com/kshitij.jpg" target="_blank" style="font-family: 'Oswald', sans-serif; font-weight: 500; font-size: 0.75rem; letter-spacing: 0.2em; color: var(--text-muted); text-decoration: none; text-transform: uppercase; border-bottom: 1px solid var(--border-film); padding-bottom: 4px;">
+      View Profile →
+    </a>
+  </div>
+  <div class="insta-strip" id="instaStrip">
+    <!-- Generated by JS -->
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Kshitij Singh</div>
+  <div class="footer-copy">© 2025 All Rights Reserved</div>
+  <div class="footer-film">Kodak Portra 400 · 35mm · 120</div>
+</footer>
+
+<!-- ==================== BACKGROUND AUDIO ==================== -->
+<audio id="bgAudio" autoplay loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/02/22/audio_d37919abea.mp3?filename=cant-help-falling-in-love-elvis-presley-cover-142191.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ==================== LIGHTBOX ==================== -->
+<div id="lightbox">
+  <button id="lightbox-close" onclick="closeLightbox()">&#x2715;</button>
+  <button id="lightbox-prev" onclick="shiftLightbox(-1)">&#x2190;</button>
+  <img id="lightbox-img" src="" alt="Lightbox preview">
+  <div id="lightbox-caption"></div>
+  <button id="lightbox-next" onclick="shiftLightbox(1)">&#x2192;</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
