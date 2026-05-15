@@ -31,14 +31,11 @@ if (bgAudio) {
   bgAudio.muted = false;
 
   const updateMusicToggle = () => {
-    const playing = !bgAudio.paused && !bgAudio.muted;
+    const playing = !bgAudio.paused;
     if (musicToggle) {
       musicToggle.classList.toggle('active', playing);
       musicToggle.setAttribute('aria-pressed', String(playing));
-      const textSpan = musicToggle.querySelector('.toggle-text');
-      if (textSpan) {
-        textSpan.textContent = playing ? 'Music On' : 'Music Off';
-      }
+      musicToggle.setAttribute('aria-label', playing ? 'Pause music' : 'Play music');
     }
   };
 
@@ -270,6 +267,44 @@ const clearContactForm = () => {
   contactState.data.projectTypes = [];
 };
 
+const setFormStatus = (message, type = 'info') => {
+  const statusEl = document.getElementById('formStatus');
+  if (!statusEl) return;
+  statusEl.textContent = message;
+  statusEl.className = message ? `form-status ${type}` : 'form-status';
+};
+
+const FORM_SUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/kshitijxsingh@gmail.com';
+
+const sendContactForm = async data => {
+  const payload = new FormData();
+  payload.append('Name', `${data.firstName} ${data.lastName}`.trim());
+  payload.append('Email', data.email);
+  payload.append('Phone', data.phone);
+  payload.append('Project Types', data.projectTypes.join(', '));
+  payload.append('Message', data.message);
+  payload.append('_subject', 'Portfolio Contact Request');
+  payload.append('_captcha', 'false');
+
+  const response = await fetch(FORM_SUBMIT_ENDPOINT, {
+    method: 'POST',
+    body: payload,
+    headers: {
+      'Accept': 'application/json'
+    }
+  });
+
+  const json = await response.json();
+  console.log('Formsubmit response:', response.status, json);
+
+  if (!response.ok) {
+    const message = json?.message || 'Unable to submit form.';
+    throw new Error(message);
+  }
+
+  return json;
+};
+
 const showSuccessState = () => {
   formSteps.forEach(stepEl => stepEl.classList.remove('active'));
   successPanel.classList.remove('hidden');
@@ -302,12 +337,23 @@ if (step3Back) {
 }
 
 if (step3Submit) {
-  step3Submit.addEventListener('click', () => {
-    if (validateStep3()) {
-      syncFormData();
-      console.log('Contact form data:', contactState.data);
+  step3Submit.addEventListener('click', async () => {
+    if (!validateStep3()) return;
+
+    syncFormData();
+    setFormStatus('Sending your message…', 'info');
+    step3Submit.disabled = true;
+
+    try {
+      const result = await sendContactForm(contactState.data);
       clearContactForm();
       showSuccessState();
+      setFormStatus(result?.message || 'Message sent. Check your email soon.', 'info');
+    } catch (error) {
+      console.error('Contact submit error:', error);
+      setFormStatus(error.message || 'Unable to send your message. Please try again later.', 'error');
+    } finally {
+      step3Submit.disabled = false;
     }
   });
 }

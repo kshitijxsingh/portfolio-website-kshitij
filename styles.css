@@ -1542,6 +1542,22 @@ section { position: relative; overflow: hidden; }
   background: #aa0000;
 }
 
+.form-status {
+  font-family: var(--font-typewriter);
+  font-size: 0.95rem;
+  color: #ccc;
+  min-height: 1.4rem;
+  margin-top: 1rem;
+}
+
+.form-status.error {
+  color: #ffb3b3;
+}
+
+.form-status.info {
+  color: #ccc;
+}
+
 .form-success {
   display: flex;
   flex-direction: column;
