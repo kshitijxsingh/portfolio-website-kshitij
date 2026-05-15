@@ -1340,9 +1340,11 @@ section { position: relative; overflow: hidden; }
   border-radius: 12px;
 }
 
-.contact-card-icon svg {
+.contact-card-icon svg,
+.contact-card-icon img {
   width: 24px;
   height: 24px;
+  object-fit: contain;
 }
 
 .contact-detail {
