@@ -35,6 +35,10 @@ if (bgAudio) {
     if (musicToggle) {
       musicToggle.classList.toggle('active', playing);
       musicToggle.setAttribute('aria-pressed', String(playing));
+      const textSpan = musicToggle.querySelector('.toggle-text');
+      if (textSpan) {
+        textSpan.textContent = playing ? 'Music On' : 'Music Off';
+      }
     }
   };
 
