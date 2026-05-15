@@ -171,17 +171,16 @@ filmToggle.addEventListener('click', () => {
 
   const filmItems = document.querySelectorAll('#filmGrid .film-roll-item');
   filmItems.forEach(item => {
-    const img = item.querySelector('.film-image');
+    const filmImg = item.querySelector('.film-image');
+    const digitalImg = item.querySelector('.digital-image');
     if (isFilmMode) {
       // Show film images
-      if (img) img.style.opacity = '1';
-      const bg = item.querySelector('.film-bg');
-      if (bg) bg.style.opacity = '0';
+      if (filmImg) filmImg.style.opacity = '1';
+      if (digitalImg) digitalImg.style.opacity = '0';
     } else {
-      // Show digital backgrounds
-      if (img) img.style.opacity = '0';
-      const bg = item.querySelector('.film-bg');
-      if (bg) bg.style.opacity = '1';
+      // Show digital images
+      if (filmImg) filmImg.style.opacity = '0';
+      if (digitalImg) digitalImg.style.opacity = '1';
     }
   });
 });
