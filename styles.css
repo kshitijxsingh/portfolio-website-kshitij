@@ -254,9 +254,6 @@ nav.hide-nav {
 .nav-links a:hover::after { width: 100%; }
 
 .nav-music-toggle {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -268,7 +265,7 @@ nav.hide-nav {
   font-size: 11px;
   font-weight: 600;
   cursor: pointer;
-  z-index: 9999;
+  z-index: 1;
   transition: border-color 0.3s, background 0.3s, transform 0.2s;
 }
 
