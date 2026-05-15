@@ -40,9 +40,14 @@
     <li><a href="#film-section">Film</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <button class="nav-music-toggle" id="musicToggle" type="button" aria-label="Toggle music">
-    <span class="toggle-text">Music On</span>
-    <span class="toggle-switch"></span>
+  <button class="nav-music-toggle" id="musicToggle" type="button" aria-label="Toggle music" aria-pressed="false">
+    <span class="music-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path class="speaker" d="M5 9.5v5h4l4 4V5.5l-4 4H5z" />
+        <path class="sound-wave" d="M15.5 8.5a5 5 0 0 1 0 7" />
+        <path class="sound-cross" d="M18 6 6 18" />
+      </svg>
+    </span>
   </button>
 </nav>
 
@@ -614,7 +619,7 @@
 </footer>
 
 <!-- ==================== BACKGROUND AUDIO ==================== -->
-<audio id="bgAudio" autoplay loop>
+<audio id="bgAudio" autoplay loop playsinline>
   <source src="audio/cant-help-falling-in-love.webm" type="audio/webm">
 </audio>
 

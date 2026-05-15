@@ -254,62 +254,54 @@ nav.hide-nav {
 .nav-links a:hover::after { width: 100%; }
 
 .nav-music-toggle {
+  width: 38px;
+  height: 38px;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 6px 10px;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.15);
-  background: rgba(0,0,0,0.55);
-  color: #fff;
-  font-size: 11px;
-  font-weight: 600;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: transparent;
+  color: rgba(255,255,255,0.4);
   cursor: pointer;
   z-index: 1;
-  transition: border-color 0.3s, background 0.3s, transform 0.2s;
+  transition: border-color 0.3s, transform 0.2s, color 0.3s;
 }
 
 .nav-music-toggle:hover {
-  border-color: rgba(204,0,0,0.35);
-  background: rgba(0,0,0,0.75);
-  transform: translateY(-1px);
+  border-color: rgba(255,255,255,0.6);
+  transform: scale(1.05);
 }
 
-.toggle-text {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.2px;
-  font-size: 10px;
+.music-icon svg {
+  width: 18px;
+  height: 18px;
 }
 
-.toggle-switch {
-  width: 28px;
-  height: 14px;
-  border-radius: 999px;
-  background: #333;
-  position: relative;
-  transition: background 0.3s;
+.sound-wave,
+.sound-cross {
+  transition: opacity 0.2s ease;
 }
 
-.toggle-switch::before {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #CC0000;
-  transition: transform 0.3s, background 0.3s;
+.nav-music-toggle.active {
+  color: #ffffff;
 }
 
-.nav-music-toggle.active .toggle-switch {
-  background: #CC0000;
+.nav-music-toggle.active .sound-wave {
+  opacity: 1;
 }
 
-.nav-music-toggle.active .toggle-switch::before {
-  transform: translateX(16px);
-  background: white;
+.nav-music-toggle.active .sound-cross {
+  opacity: 0;
+}
+
+.nav-music-toggle:not(.active) .sound-wave {
+  opacity: 0;
+}
+
+.nav-music-toggle:not(.active) .sound-cross {
+  opacity: 1;
 }
 
 /* ============================================
@@ -1329,21 +1321,21 @@ section { position: relative; overflow: hidden; }
 }
 
 .contact-card-icon {
-  width: 48px;
-  height: 48px;
-  min-width: 48px;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .contact-card-icon svg,
 .contact-card-icon img {
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
   object-fit: contain;
 }
 
